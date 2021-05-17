@@ -24,3 +24,87 @@
 
 </html>
 
+body {
+    font-family: 'Roboto Mono',monospace;
+    min-height: 854px;
+    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-certa.png');
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .calculadora {
+    width: 264px;
+    height:360px;
+    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-2-calculadora-calc.png');
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  h2 {
+    position: absolute;
+    font-size:16px;
+    font-weight:bold;
+    top: 142px;
+    left: calc(50% - 72.5px);
+    width: 145px;
+    text-align:center;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+  }
+  
+  var primeiroValor = parseInt (prompt("Digite o primeiro valor:"))
+
+var segundoValor = parseInt(prompt ("Digite o segundo valor:"))
+
+
+var operacao = prompt("Digite 1 para fazer um divisão, 2 para multiplicação, 3 para soma e 4 para subtração:")
+
+if (operacao == 1) {
+  var resultado = primeiroValor / segundoValor
+document.write("<h2>" + primeiroValor + " / " + segundoValor + " = " + resultado + "</h2>")
+} else if (operacao == 2) { 
+  var resultado = primeiroValor * segundoValor
+document.write("<h2>" + primeiroValor + " * " + segundoValor + " = " + resultado + "</h2>")  
+}  else if (operacao == 3) { 
+  var resultado = primeiroValor + segundoValor
+document.write("<h2>" + primeiroValor + " + " + segundoValor + " = " + resultado + "</h2>")
+}  else if (operacao == 4) { 
+  var resultado = primeiroValor - segundoValor
+document.write("<h2>" + primeiroValor + " - " + segundoValor + " = " + resultado + "</h2>")
+} else {
+  document.write (" <h2> Opção invalida </h2>")
+}
+  
+  //if = SE
+  //else = Senão
+  //else if = Senão SE
+
+
+
